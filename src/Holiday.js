@@ -3,9 +3,9 @@ import React from "react";
 
 function Holiday(props) {
   return (
-    <React.Fragment>
+    // <React.Fragment> //because returning only 1 element
       <p>{props.name}: {props.month} {props.day}</p>
-    </React.Fragment>
+    // </React.Fragment>
   
   )
   

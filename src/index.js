@@ -6,7 +6,7 @@ import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App loggedIn={true} />
 
   </React.StrictMode>,
   document.getElementById("root")
