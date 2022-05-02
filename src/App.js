@@ -1,8 +1,9 @@
-import React from "react"; //why do we need this, for React.fragment
+import React from "react"; //why do we need this? for React.fragment
 import "./App.css";
 import Header from "./Header.js";
 import Purchase from "./Buying.js";
 import WelcomeWB from "./WelcomeBack.js";
+import Holiday from "./Holiday";
 import Footer from "./Footer.js";
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
       </p>
       <Purchase />
       <WelcomeWB />
+      <Holiday name="Valentine's Day" day="14" month="February"/>
+      <Holiday name="Christmas" day="25" month="December"/>
       <Footer />
     </React.Fragment>
   );
