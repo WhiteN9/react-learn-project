@@ -2,7 +2,15 @@
 import "./App.css";
 
 function App() {
-  const element = <p>Hello, there!</p>;
+  const name = "White";
+  const url = "https://www.thinkful.com/";
+  const linkText = "Thinkful";
+  const element = (
+    <p>
+      {" "}
+      Hello, {name}! Welcome to <a href={url}>{linkText}</a>.
+    </p>
+  );  
   return element;
 }
 
