@@ -5,6 +5,9 @@ import Purchase from "./Buying.js";
 import WelcomeWB from "./WelcomeBack.js";
 import Holiday from "./Holiday";
 import Clock from "./Clock";
+import { MakeList, MakeToDoTable } from "./List.js";
+import GroceryList from "./GroceryTable";
+import Roster from "./Roster";
 import Footer from "./Footer.js";
 
 function Notifications({ notifications }) {
@@ -28,6 +31,11 @@ function AppNotif() {
 }
 
 function App({ loggedIn }) {
+  const roster = [
+    { id: "1", firstName: "John", lastName: "Smith", location: "California" },
+    { id: "2", firstName: "April", lastName: "White", location: "Nebraska" },
+    { id: "3", firstName: "Jane", lastName: "Doe", location: "Florida" },
+  ];
   if (loggedIn) {
     const name = "White";
     const url = "https://www.thinkful.com/";
@@ -48,6 +56,10 @@ function App({ loggedIn }) {
         <Footer />
         <AppNotif />
         <Clock />
+        <MakeList />
+        <MakeToDoTable />
+        <GroceryList />
+        <Roster detailed={false} roster={roster} />
       </React.Fragment>
     );
     return element;
